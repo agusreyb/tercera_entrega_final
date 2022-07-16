@@ -1,0 +1,108 @@
+header {
+	background-color: #112031;
+
+	.fuente__1 {
+		font-style: initial;
+		font-family: $fuente-principal;
+		line-height: 35px;
+		font-size: 35px;
+		text-align: center;
+		color: $secondary;
+	}
+
+	.fuente__2 {
+		margin-top: 5px;
+		font-style: italic;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+		line-height: 25px;
+		font-size: 25px;
+		color: $secondary;
+	}
+
+	.bg-primary {
+		background-color: $primary  !important;
+	}
+
+	.sidebar-container {
+		min-height: 25vh;
+
+		.menu {
+			width: 18rem;
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px solid $secondary;
+		}
+	}
+
+	.logo {
+		max-width: 500px;
+	}
+
+	.navbar {
+		border-top: 2px solid $secondary;
+	}
+
+	.nav-link {
+		/*border-radius: 10px;*/
+		text-decoration: none;
+		color: $secondary;
+
+		&:hover {
+			/*background-color: $secondary;*/
+			color: $secondary;
+			border-bottom: 1px solid $secondary
+		}
+	}
+
+	.active{
+		color: $secondary !important;
+		background-color: grey !important;
+	}
+
+	.navbar-toggler-icon {
+		color: black;
+	}
+
+	.submenu {
+		position: absolute;
+		width: 170px;
+		display: none;
+		z-index: 3;
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			a {
+				display: block;
+				background-color: $primary;
+				padding: 15px;
+				color: $secondary;
+				text-decoration: none;
+
+				&:hover {
+					background-color: $secondary;
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.navbar-nav {
+		li {
+			&:hover {
+				.submenu {
+					display: block;
+				}
+			}
+		}
+	}
+.active{
+	color: $primary;
+	background-color: white;
+}
+}

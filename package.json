@@ -1,0 +1,15 @@
+{
+  "author": "Agustina Rey",
+  "description": "Entrega SASS",
+  "license": "MIT",
+  "name": "entrega-sass",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed sass/style.scss assets/css/estilos2.css"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}
